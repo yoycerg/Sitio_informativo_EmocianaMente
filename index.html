@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmocionaMente</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+    <!-- Botón menú lateral -->
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    <!-- Menú lateral -->
+    <div class="side-menu" id="sideMenu">
+        <a href="#" onclick="navigateTo()">Inicio</a>
+        <a href="libros.html" onclick="navigateTo()">Libros</a>
+        <a href="musica.html" onclick="navigateTo()">Música</a>
+        <a href="mapa.html" onclick="navigateTo()">Mapa</a>
+        <a href="configuracion.html" onclick="navigateTo()">Configuración</a>
+    </div>
+
+    <!-- Barra principal fija -->
+    <nav>
+        <div class="nav-container">
+            <h1>EmocionaMente</h1>
+            <button class="login-btn" onclick="openModal()">Iniciar sesión</button>
+        </div>
+        <p>Tu espacio para cuidar tu salud emocional y mental</p>
+    </nav>
+
+
+    <!-- Contenido principal -->
+    <main>
+        <div class="container">
+            <section class="intro-box">
+                <h2>¿Qué es EmocionaMente?</h2>
+                <p>EmocionaMente es una plataforma dedicada a promover el bienestar emocional a través de herramientas
+                    como
+                    libros, música, y recursos de crecimiento personal. Nuestra misión es ayudarte a explorar y
+                    fortalecer
+                    tu salud mental de forma accesible, educativa y acogedora.</p>
+            </section>
+
+            <section class="feature-boxes">
+                <div class="box">
+                    <h3>Beneficios de cuidar tu salud mental</h3>
+                    <ul>
+                        <li>Mejor calidad de vida</li>
+                        <li>Relaciones más sanas</li>
+                        <li>Reducción del estrés y ansiedad</li>
+                        <li>Mayor autoestima</li>
+                    </ul>
+                </div>
+
+                <div class="box">
+                    <h3>Riesgos de no atender tu bienestar</h3>
+                    <ul>
+                        <li>Desánimo o depresión</li>
+                        <li>Problemas de salud física</li>
+                        <li>Conflictos personales o laborales</li>
+                        <li>Desconexión emocional</li>
+                    </ul>
+                </div>
+
+                <div class="box">
+                    <h3>Herramientas que ofrecemos</h3>
+                    <ul>
+                        <li>Recomendaciones de libros</li>
+                        <li>Playlists para cada estado emocional</li>
+                        <li>Ejercicios de reflexión personal</li>
+                        <li>Consejos prácticos de autocuidado</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="soluction-boxes">
+                <div class="box">
+                </div>
+                <div class="box">
+
+                </div>
+
+            </section>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2025 EmocionaMente. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- JS -->
+
+    <script src="static/js/inicio.js"></script>
+</body>
+
+</html>

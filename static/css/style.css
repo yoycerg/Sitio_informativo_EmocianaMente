@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f6f8;
+    color: #333;
+}
+
+/* Botón menú lateral */
+.menu-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #90b455;
+    color: white;
+    border: none;
+    font-size: 22px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 4000;
+    /* el más alto de todos */
+}
+
+/* Menú lateral */
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -260px;
+    height: 100%;
+    width: 260px;
+    background-color: #62792f;
+    padding-top: 60px;
+    transition: left 0.3s ease;
+    z-index: 3000;
+    /* SUBIMOS para que esté sobre el nav */
+}
+
+.side-menu a {
+    display: block;
+    color: white;
+    padding: 15px 25px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.side-menu a:hover {
+    background-color:#5b7229;
+    color: black;
+}
+
+/* Barra principal fija */
+nav {
+    position: sticky;
+    /* Hace que el nav se quede pegado al top */
+    top: 0;
+    background-color: #6D8834;
+    color: white;
+    padding: 1.5rem 1rem 1rem;
+    text-align: center;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.nav-container h1 {
+    margin: 0;
+}
+
+.login-btn {
+    position: absolute;
+    right: 0;
+    padding: 8px 15px;
+    background-color: #6D8834;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.login-btn:hover {
+    background-color:#516426;
+}
+
+/* Contenido principal */
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.intro-box {
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature-boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.box {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 5px;
+}
+
+.box h3 {
+    margin-bottom: 20px;
+    color: #5c6bc0;
+    text-align: center;
+}
+
+.box li {
+    margin-left: 40px;
+}
+
+.intro-box h2 {
+    text-align: center;
+}
+
+/* Pie de página */
+footer {
+
+    background-color: #eeeeee;
+    text-align: center;
+    padding: 60px;
+    margin-top: 3rem;
+}
+
+footer p {
+
+margin-top: 20px;
+
+}
+
+.soluction-boxes {
+    display: flex;
+   justify-content: space-evenly;
+    margin-top: 20px;
+  
+}
+
+.soluction-boxes .box {
+    width: 50%;
+
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
