@@ -1,104 +1,148 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EmocionaMente</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>EmocionaMente — Salud Mental en Chile</title>
+    <meta name="description"
+        content="Información sobre salud mental en Chile: datos, señales, quiénes están en riesgo, servicios y líneas de ayuda. Fuentes oficiales incluidas." />
     <link rel="stylesheet" href="static/css/style.css">
 </head>
 
 <body>
-    <!-- Botón menú lateral -->
-    <button class="menu-btn" onclick="toggleMenu()">☰</button>
-
-    <!-- Menú lateral -->
-    <div class="side-menu" id="sideMenu">
-        <a href="#" onclick="navigateTo()">Inicio</a>
-        <a href="libros.html" onclick="navigateTo()">Libros</a>
-        <a href="musica.html" onclick="navigateTo()">Música</a>
-        <a href="mapa.html" onclick="navigateTo()">Mapa</a>
-        <a href="configuracion.html" onclick="navigateTo()">Configuración</a>
-    </div>
-
-    <!-- Barra principal fija -->
-    <nav>
-        <div class="nav-container">
-            <h1>EmocionaMente</h1>
-            <button class="login-btn" onclick="openModal()">Iniciar sesión</button>
+    <nav aria-label="Barra de navegación principal">
+        <div class="nav-inner">
+            <div class="brand">
+                <svg width="36" height="36" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <circle cx="12" cy="12" r="10" fill="#fff" opacity="0.12"></circle>
+                    <path d="M12 3c3 0 5 2 5 5s-2 5-5 5-5-2-5-5 2-5 5-5z" fill="#fff" opacity="0.16" />
+                </svg>
+                <div>
+                    <h1>EmocionaMente</h1>
+                    <div class="tag">Información y recursos sobre salud mental en Chile</div>
+                </div>
+            </div>
+            <div class="actions">
+                <a class="btn" href="#recursos">Líneas de ayuda</a>
+                <a class="btn-alt" href="#fuentes">Fuentes</a>
+            </div>
         </div>
-        <p>Tu espacio para cuidar tu salud emocional y mental</p>
     </nav>
 
+    <main class="wrap" role="main">
+        <section class="hero card" aria-labelledby="hero-title">
+            <h2 id="hero-title">Salud mental en Chile — panorama resumen</h2>
+            <p class="muted">
+                Esta página reúne datos recientes, señales de alerta, factores de riesgo, servicios disponibles en Chile
+                y
+                recomendaciones prácticas para el autocuidado y la búsqueda de ayuda profesional.
+            </p>
 
-    <!-- Contenido principal -->
-    <main>
-        <div class="container">
-            <section class="intro-box">
-                <h2>¿Qué es EmocionaMente?</h2>
-                <p>EmocionaMente es una plataforma dedicada a promover el bienestar emocional a través de herramientas
-                    como
-                    libros, música, y recursos de crecimiento personal. Nuestra misión es ayudarte a explorar y
-                    fortalecer
-                    tu salud mental de forma accesible, educativa y acogedora.</p>
+            <div class="gap"></div>
+
+            <div class="grid grid-3" role="region" aria-label="Datos clave">
+                <div class="card center" aria-live="polite">
+                    <div class="pill">Prevalencia</div>
+                    <div class="stat">13.7%</div>
+                    <div class="muted">de la población adulta presenta síntomas moderados o severos de depresión
+                        (Termómetro Achs-UC).</div>
+                    <p class="muted" style="margin-top:.5rem;">Fuente del dato: estudio “Termómetro de la Salud Mental”
+                        (Achs-UC).</p>
+                </div>
+
+                <div class="card center">
+                    <div class="pill">Acceso a atención</div>
+                    <div class="stat">44%</div>
+                    <div class="muted">de quienes necesitaron, lograron consultar a un profesional en el último año
+                        (ansiedad/depresión).</div>
+                    <p class="muted" style="margin-top:.5rem;">Informe: brechas entre necesidad percibida y acceso a
+                        consulta.</p>
+                </div>
+
+                <div class="card center">
+                    <div class="pill">Carga de enfermedad</div>
+                    <div class="stat">23.2%</div>
+                    <div class="muted">de los años de vida perdidos por discapacidad o muerte se deben a condiciones
+                        neuro-psiquiátricas en Chile.</div>
+                    <p class="muted" style="margin-top:.5rem;">Fuente: perfil y carga de enfermedad.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid grid-2" aria-label="Contenido principal">
+            <article class="card" id="qué-es">
+                <h3>¿Qué entendemos por salud mental?</h3>
+                <p class="muted">La salud mental cubre el bienestar emocional, psicológico y social: cómo pensamos,
+                    sentimos y actuamos.
+                    Afecta la forma en que manejamos el estrés, nos relacionamos con otros y tomamos decisiones.</p>
+
+                <div class="gap"></div>
+
+                <h3>Señales y síntomas que merecen atención</h3>
+                <ul>
+                    <li>Tristeza persistente o pérdida marcada de interés en actividades.</li>
+                    <li>Cambios importantes en el apetito o el sueño.</li>
+                    <li>Fatiga constante o falta de energía.</li>
+                    <li>Dificultad para concentrarse o tomar decisiones.</li>
+                    <li>Pensamientos recurrentes de inutilidad o de hacerse daño — buscar ayuda urgente.</li>
+                </ul>
+            </article>
+
+            <aside class="card help" id="quiénes">
+                <h3>¿Quiénes están en mayor riesgo?</h3>
+                <ul>
+                    <li>Personas con historial de trastornos mentales (depresión, ansiedad, adicciones).</li>
+                    <li>Adolescentes y jóvenes — tasas de soledad y ansiedad han aumentado.</li>
+                    <li>Mujeres, por sobrecarga laboral y de cuidados.</li>
+                    <li>Personas con baja red de apoyo social, desempleo, víctimas de violencia o discriminación.</li>
+                </ul>
+
+                <div class="gap"></div>
+                <h3>Prevención y acciones comunitarias</h3>
+                <ul>
+                    <li>Integrar la salud mental en atención primaria y escuelas.</li>
+                    <li>Promover redes de apoyo comunitario y espacios públicos seguros.</li>
+                    <li>Reducir estigma mediante campañas locales y educación.</li>
+                </ul>
+            </aside>
+        </section>
+
+        <div class="ofrecer-pagina">
+            <h2 id="recursos-title">Nuestra Pagina te ofrece</h2>
+            <section class="card">
+                <h3>📚 Libros para leer</h3>
+                <p>Explora una colección de libros cuidadosamente seleccionados para ayudarte a encontrar paz,
+                    inspiración y
+                    equilibrio mental. Nuestra biblioteca virtual incluirá obras de crecimiento personal, mindfulness y
+                    bienestar emocional.</p>
+
             </section>
 
-            <section class="feature-boxes">
-                <div class="box">
-                    <h3>Beneficios de cuidar tu salud mental</h3>
-                    <ul>
-                        <li>Mejor calidad de vida</li>
-                        <li>Relaciones más sanas</li>
-                        <li>Reducción del estrés y ansiedad</li>
-                        <li>Mayor autoestima</li>
-                    </ul>
-                </div>
-
-                <div class="box">
-                    <h3>Riesgos de no atender tu bienestar</h3>
-                    <ul>
-                        <li>Desánimo o depresión</li>
-                        <li>Problemas de salud física</li>
-                        <li>Conflictos personales o laborales</li>
-                        <li>Desconexión emocional</li>
-                    </ul>
-                </div>
-
-                <div class="box">
-                    <h3>Herramientas que ofrecemos</h3>
-                    <ul>
-                        <li>Recomendaciones de libros</li>
-                        <li>Playlists para cada estado emocional</li>
-                        <li>Ejercicios de reflexión personal</li>
-                        <li>Consejos prácticos de autocuidado</li>
-                    </ul>
-                </div>
+            <section class="card">
+                <h3>🎶 Música relajante</h3>
+                <p>Disfruta de listas de reproducción con música suave y relajante, diseñadas para reducir el estrés y
+                    mejorar tu concentración. Ideal para acompañarte mientras lees, trabajas o meditas.</p>
             </section>
-            <section class="soluction-boxes">
-                <div class="box problembox">
-                    <h3>Problema</h3>
-                    De acuerdo con la décima edición del Termómetro de Salud Mental Achs-UC, el 13,7% de los encuestados
-                    presenta síntomas moderados o severos de depresión, un alza estadísticamente significativa de 3,3
-                    puntos porcentuales respecto de lo encontrado en la ronda anterior, de abril de 2024.
-                </div>
-                <div class="box solutionbox">
-                    <h3>Solución</h3>
-                    <p>Se propone desarrollar una pagina web, que tiene una variedad de soluciones para relajarse y subir el ánimo, tales como
-                        playlists con música tranquila, libros informativos y un mapa con parques seleccionados para ir a pasar el rato.  </p>
-                </div>
 
+            <section class="card">
+                <h3>🗺️ Mapa de lugares para relajarte</h3>
+                <p>Accede a un mapa interactivo con recomendaciones de parques, centros de meditación, spas y otros
+                    espacios
+                    donde puedas desconectarte y recargar energías.</p>
             </section>
-        </div>
+            <section class="card">
+                <h3>Consejo para tu que te relajes</h3>
+                <p>Esta pagina te puede dicer que hagas ejercicios para que te puedes relajar </p>
+            </section>
     </main>
 
-    <!-- Pie de página -->
     <footer>
-        <p>&copy; 2025 EmocionaMente. Todos los derechos reservados.</p>
+        <div>© 2025 EmocionaMente — Información de referencia para orientación. No reemplaza el consejo profesional.
+        </div>
+        <div><a href="#recursos">Ir a líneas de ayuda •</a> <a href="#fuentes"> Fuentes</a>
+        </div>
     </footer>
-
-    <!-- JS -->
-
-    <script src="static/js/inicio.js"></script>
 </body>
 
 </html>
