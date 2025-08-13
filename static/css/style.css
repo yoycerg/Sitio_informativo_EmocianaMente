@@ -30,7 +30,8 @@ nav {
     color: #fff;
     padding: 1rem;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
-    display: flex;
+ display: flex;
+ justify-content: space-between;
 }
 
 .nav-inner {
@@ -39,13 +40,14 @@ nav {
     display: flex;
     gap: 1rem;
     align-items: center;
-    justify-content: space-between;
+
 }
 
 .brand {
-    display: flex;
+   display: flex;
     align-items: center;
     gap: .75rem;
+    justify-content: space-between;
 }
 
 .brand h1 {
@@ -66,7 +68,26 @@ nav {
     padding: 0 1rem;
 }
 
-.hero {
+.info-nav {
+display: flex;
+align-items: center;
+
+
+
+}
+
+.info-nav a {
+ padding: 10px;
+    color:#fff;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.info-nav a:hover {
+    background-color: #214d25;
+}
+
+.datos {
     background: #fff;
     border-radius: 12px;
     padding: 1.5rem;
@@ -129,9 +150,9 @@ li {
     color: #b02a2a;
 }
 
-.muted {
+.parrafo-gris {
+    text-align: center;
     color: #666;
-    font-size: .95rem;
 }
 
 .help {
@@ -239,5 +260,5 @@ margin-top: 10px;
 height: 200px;
 border-radius: 10px;
 margin-left: 75px;
-margin-top: 70px;
+margin-top: 110px;
 }

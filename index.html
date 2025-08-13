@@ -2,85 +2,80 @@
 <html lang="es">
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>EmocionaMente — Salud Mental en Chile</title>
-    <meta name="description"
-        content="Información sobre salud mental en Chile: datos, señales, quiénes están en riesgo, servicios y líneas de ayuda. Fuentes oficiales incluidas." />
+    <title>EmocionaMente</title>
     <link rel="stylesheet" href="static/css/style.css">
 </head>
 
 <body>
-    <nav aria-label="Barra de navegación principal">
-        <div class="nav-inner">
-            <div class="brand">
-                <svg width="36" height="36" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                    <circle cx="12" cy="12" r="10" fill="#fff" opacity="0.12"></circle>
-                    <path d="M12 3c3 0 5 2 5 5s-2 5-5 5-5-2-5-5 2-5 5-5z" fill="#fff" opacity="0.16" />
-                </svg>
-                <div>
-                    <h1>EmocionaMente</h1>
-                    <div class="tag">Información y recursos sobre salud mental en Chile</div>
-                </div>
+    <nav>
+        <div class="brand">
+            <svg width="36" height="36" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <circle cx="12" cy="12" r="10" fill="#fff" opacity="0.12"></circle>
+                <path d="M12 3c3 0 5 2 5 5s-2 5-5 5-5-2-5-5 2-5 5-5z" fill="#fff" opacity="0.16" />
+            </svg>
+            <div class="titulo">
+                <h1>EmocionaMente</h1>
+                <p>Información y recursos sobre salud mental en Chile</p>
             </div>
-            <div class="href">
-                <a href="#" target="_blank">Sitio oficial</a>
-                <a href="#" target="_blank">Contacto</a>
-                <a href="#" target="_blank">Sobre nosotros</a>
-            </div>
-
         </div>
+        <div class="info-nav">
+            <a href="#" target="_blank">Sitio oficial</a>
+            <a href="#" target="_blank">Contacto</a>
+            <a href="#" target="_blank">Sobre nosotros</a>
+        </div>
+
     </nav>
 
-    <main class="wrap" role="main">
-        <section class="hero" aria-labelledby="hero-title">
-            <h2 id="hero-title">Salud mental en Chile</h2>
-            <p class="muted">
-                Esta página reúne datos recientes, señales de alerta, factores de riesgo, servicios disponibles en Chile
-                y
-                recomendaciones prácticas para el autocuidado y la búsqueda de ayuda profesional.
+    <main class="wrap">
+        <section class="datos">
+            <h2>Salud mental en Chile</h2>
+            <p class="parrafo-gris"> Aqui hay alugonos datos importantes sobre la salud mental en Chile, incluyendo
+                estadísticas, señales de alerta y recursos disponibles:</p>
             </p>
 
             <div class="gap"></div>
 
-            <div class="grid grid-3" role="region" aria-label="Datos clave">
+            <div class="grid grid-3">
+
                 <div class="card center" aria-live="polite">
                     <div class="pill">Prevalencia</div>
                     <div class="stat">13.7%</div>
-                    <div class="muted">de la población adulta presenta síntomas moderados o severos de depresión
+                    <div class="parrafo-gris">de la población adulta presenta síntomas moderados o severos de depresión
                         (Termómetro Achs-UC).</div>
-                    <p class="muted" style="margin-top:.5rem;">Fuente del dato: estudio “Termómetro de la Salud Mental”
+                    <p class="parrafo-gris">Fuente del dato: estudio “Termómetro de la Salud Mental”
                         (Achs-UC).</p>
                 </div>
 
                 <div class="card center">
                     <div class="pill">Acceso a atención</div>
                     <div class="stat">44%</div>
-                    <div class="muted">de quienes necesitaron, lograron consultar a un profesional en el último año
+                    <div class="parrafo-gris">de quienes necesitaron, lograron consultar a un profesional en el último año
                         (ansiedad/depresión).</div>
-                    <p class="muted" style="margin-top:.5rem;">Informe: brechas entre necesidad percibida y acceso a
+                    <p class="parrafo-gris" >Informe: brechas entre necesidad percibida y acceso a
                         consulta.</p>
                 </div>
 
                 <div class="card center">
                     <div class="pill">Carga de enfermedad</div>
                     <div class="stat">23.2%</div>
-                    <div class="muted">de los años de vida perdidos por discapacidad o muerte se deben a condiciones
+                    <div class="parrafo-gris">de los años de vida perdidos por discapacidad o muerte se deben a condiciones
                         neuro-psiquiátricas en Chile.</div>
-                    <p class="muted" style="margin-top:.5rem;">Fuente: perfil y carga de enfermedad.</p>
+                    <p class="parrafo-gris">Fuente: perfil y carga de enfermedad.</p>
                 </div>
             </div>
         </section>
 
-        <section class="grid grid-2" aria-label="Contenido principal">
+        <section class="grid grid-2">
             <article class="card">
                 <h3>Problema</h3>
                 <p>
-                <p>un fenómeno preocupante ha estado ocurriendo en Chile desde el término de la pandemia, y es el
+                <p class="parrafo-gris">un fenómeno preocupante ha estado ocurriendo en Chile desde el término de la pandemia, y es el
                     aumento de suicidios, segun la Organización Panamericana de la Salud, Chile se encuentra en el sexto
                     lugar en el ranking de países con mayor tasa de suicidio.</p>
 
-                <p>aunque la gente que muestra mas problemas con depresión sean los adolescentes y personas de la
+                <p class="parrafo-gris">aunque la gente que muestra mas problemas con depresión sean los adolescentes y personas de la
                     tercera edad, han habido consultas por depresión por parte de todas las edades, lo que nos remarca
                     que el problema principal es la depresión en si, gracias a esto podemos entender que es fundamental
                     abordar el tema de la depresión o otros factores contribuyentes, para asi proporcionar atención
@@ -97,7 +92,7 @@
 
             <aside class="card help">
                 <h3>Solución</h3>
-                <p>La solución es hacer un sistema que ayude a las personas a conocer sus estadísticas de salud mediante
+                <p class="parrafo-gris">La solución es hacer un sistema que ayude a las personas a conocer sus estadísticas de salud mediante
                     una aplicación en un teléfono inteligente.
                     La aplicación tendría lo siguiente que serían: guías de relajamiento, que indiquen la solución a los
                     problemas mentales e integrar las estadísticas de salud, tendrá Música relajante y consejos que te
@@ -112,7 +107,7 @@
             <h2 id="recursos-title">Nuestra página te ofrece:</h2>
             <section class="card">
                 <h3>📚 Libros para leer</h3>
-                <p>Explora una colección de libros cuidadosamente seleccionados para ayudarte a encontrar paz,
+                <p class="parrafo-gris">Explora una colección de libros cuidadosamente seleccionados para ayudarte a encontrar paz,
                     inspiración y
                     equilibrio mental. Nuestra biblioteca virtual incluirá obras de crecimiento personal, mindfulness y
                     bienestar emocional.</p>
@@ -127,13 +122,13 @@
 
             <section class="card">
                 <h3>🗺️ Mapa de lugares para relajarte</h3>
-                <p>Accede a un mapa interactivo con recomendaciones de parques, centros de meditación, spas y otros
+                <p class="parrafo-gris">Accede a un mapa interactivo con recomendaciones de parques, centros de meditación, spas y otros
                     espacios
                     donde puedas desconectarte y recargar energías.</p>
             </section>
             <section class="card">
                 <h3>🦾 Consejos/Actividades</h3>
-                <p>Esta página te puede proporcionar ejercicios y actividades para entrar en un estado de relajación.
+                <p class="parrafo-gris">Esta página te puede proporcionar ejercicios y actividades para entrar en un estado de relajación.
                 </p>
             </section>
     </main>
