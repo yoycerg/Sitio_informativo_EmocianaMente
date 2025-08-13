@@ -30,6 +30,7 @@ nav {
     color: #fff;
     padding: 1rem;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    display: flex;
 }
 
 .nav-inner {
@@ -94,6 +95,12 @@ nav {
     padding: 1rem;
     border-radius: 10px;
     box-shadow: 0 4px 14px rgba(20, 30, 50, 0.04);
+}
+
+.card:hover{
+  transform: scale(1.09);
+  transition: all 0.3s ease-in-out;
+  background-color: #e6f0df;
 }
 
 h2 {
@@ -184,7 +191,7 @@ footer {
 }
 
 .gap {
-    height: .8rem;
+    height: 10px;
 }
 
 /* Accessibility tweaks */
@@ -216,4 +223,21 @@ button:focus {
 text-align: center;
 
 
+}
+
+
+img {
+width: 300px;
+height: 200px;
+border-radius: 10px;
+margin-left: 75px;
+margin-top: 10px;
+}
+
+.solicion-img {
+   width: 300px;
+height: 200px;
+border-radius: 10px;
+margin-left: 75px;
+margin-top: 70px;
 }
